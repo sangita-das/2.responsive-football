@@ -250,7 +250,7 @@ height: 309px;
     line-height: 17px;
     color: #737373;
     }
-.contact-info p{
+.contact-info{
     font-weight: 500;
 font-size: 12px;
 line-height: 14px;
@@ -315,9 +315,165 @@ text-align: center;
 
 
 /* Mobile Devices */
-   
 
-@media only screen and (max-width:688px) {
+
+
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .football-news{
+        background-color: #2D25A0;
+        height: 695px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .layer{
+        width: 60%;
+        padding-left: 16px;
+        padding-top: 112px;
+        padding-right: 66px;
+    }
+    .layer-title{
+        color: white;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        margin: 0px;
+        padding-bottom: 27px;
+    }
+    .watch-live-button{
+        width: 168px;
+        height: 44px;
+        padding: 10px 24px 10px 24px;
+        background-color: #E02C6D;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+    
+    }
+    .layer-link{
+     padding-left: 10px;
+    }
+    
+    .fa-arrow-righ {
+        width: 40%;
+        padding-top: 50px;
+        display: flex;
+    }
+    .layer-banner img{
+        width: 329px;
+        height: 260px;
+        margin: 0px -16px -50px -16px;
+    }
+}
+/* Player Layout  */
+
+@media only screen and (max-width: 688px) {
+   
+    .players-layout{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        grid-gap:30px;
+    }
+}
+
+/* Highlights Copa America 2021  */
+
+@media only screen and (max-width: 688px) {
+   
+    .latest-news{
+        justify-content: center;
+        display: flex;
+    flex-direction: column;
+    align-items: center;  
+        grid-template-columns: repeat(1, 1fr);
+        margin-right:80px; 
+    }
+    .highlights-layer{
+
+            margin-left: 150px;
+            margin-right: 15px;
+
+            width: 329px;
+            height: 299px;
+        margin-right: 50px;
+      
+    }
+   
+    
+    .summary{
+        
+        font-size: 16px;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: justify;
+        width: 329px;
+        height: 143px;
+
+    }
+   
+    .bottom-banner img{
+        grid-template-columns: repeat(1, 1fr);
+        width: 328px;
+        height: 248px;
+       padding-left: 250px;
+        
+        
+    }
+}
+
+/* -- contact-with-player-section-start -- */
+@media only screen and (max-width: 688px) {
+
+    .contact-head{
+        margin-top: 40px;
+        margin-right:35%;
+        margin-bottom: 0;
+        font-weight: 700;
+        font-size: 24px;
+        
+    }
+    
+    .contact-player{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        grid-column-gap:5px;
+        margin-top:0px;
+       padding: 10px;
+     }
+    .contact{
+        width: 360px;
+        height: 175px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .flexible-info img{
+        height: 230px;
+        width: 200px;
+    }
+   
+    .contact-info{
+        font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+   
+    }
+    .footer-logo img {
+        height: 85px;
+        padding-top: 40px;
+        padding-right: 35px;
+       
+    }
+}
+
+
+
+/* @media only screen and (max-width:688px) {
     .container{
         width: 100%;
     }
@@ -328,18 +484,20 @@ text-align: center;
     align-items: center;
     
 }
-.players-layout, .latest-news .contact-player {
+
+
+.players-layout, .latest-news .information {
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
    
-    .football-news, .players-layout, .latest-news .contact-player {
+    .football-news, .players-layout, .latest-news, .information {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-    
+     */
 
 
 /* tablet devices */
@@ -347,10 +505,10 @@ text-align: center;
     .container{
         width: 100%;
     }
-    .football-news, .players-layout, .latest-news .contact-player {
-        grid-template-columns: repeat(2, 1fr);
+    .football-news, .players-layout, .latest-news, .information {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .football-news, .contact-player, .players-layout, .latest-news{
+    .football-news, .players-layout, .latest-news, .information{
 
         display: flex;
         flex-direction: column;
