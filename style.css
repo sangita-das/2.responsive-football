@@ -1,41 +1,60 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
 /* common styles or utilities */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #FFFFFF;
     
 }
 
-main{
+    /*----------------------
+    header-section
+    ---------------------- */
 
-   
-  
+header{
+    
+    background-color: 
+    #2D25A0;
 }
+
+
+
+
 /* Conmebol Copa America 2021 */
 .football-news{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
     background-color:#2D25A0; 
-    width: 100%;
+   
     height: 677px;
 }
 
 .layer{
-    margin-left: 156px;
-    margin-top: 207px;
-    margin-bottom: 169px;  
+    width: 75%;
+    padding-left: 116px;
+    padding-top: 207px;
+    
+    
 }
 
-.layer-title{
+.layer-title {
     font-size: 60px;
     color: #FFFFFF;
-    margin-bottom: 27px;
+    padding-bottom: 27px;
+    margin: 0px;
     }
 
-.layer-button{   
+.watch-live-button{   
     background-color:#E02C6D;
     padding: 10px, 24px;
     width: 168px;
@@ -47,15 +66,16 @@ main{
     
     }
 
- .layer-link{
+ .layer-link {
     font-size: 16px;
     text-decoration: none;
     color: #FFFFFF;  
+    
 }
 
 .fa-arrow-right{
-    color: #FFFFFF;
-    margin: 0px 8px; 
+    color: #FFFFFF; 
+    padding-left: 10px;
    
 }
 
@@ -66,15 +86,42 @@ margin-top: 135px;
 margin-right: 140px;
 margin-bottom: 86px;
 
-
 }
 
-/* Middle Layer player Details  */
+/* animation */
+
+@keyframes layer-banner {
+    50% {
+      transform:scale(0.9);
+    }
+    100% {
+      transform:scale(1.0);
+    }
+  }
+  .layer-banner:hover {
+      animation-name: layer-banner;
+      animation-duration: 0.9s;
+      animation-timing-function: ease-out;
+      animation-iteration-count:infinite;
+      animation-direction:reverse;
+    }
+
+     /* ------------------------
+          main-section
+     -------------------------- */
+
+/* -- Player Album -- */
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
 
 .players-layout{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 30px;
+    grid-row-gap: 27px;
     grid-column-gap: 30px;
     margin-left: 180px;
     margin-right: 210px;
@@ -85,7 +132,13 @@ margin-bottom: 86px;
 .player{
   background-color:  #FFFFFF; 
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-  
+  padding: 15px;
+  width: 330px;
+  height: 474px;
+}
+
+.player:hover{
+    box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.808);
 }
 
 .player-image img{
@@ -100,20 +153,20 @@ height: 256px;
     margin-top: 16px;    
 }
 .player-bio{
-    font-size: 16px;    color: #6C6C6C;
+    font-size: 16px;    
+    color: #6C6C6C;
     margin-bottom: 33px;
     margin-left: 15px;
     margin-right: 15px;
+    margin-top: 10px;
+    text-align: justify;
 }
 
 
 /* Highlights Copa America 2021 */
 
 
-.bottom-banner img{
-    width: 567px;
-height: 427px;
-}
+
 .latest-news{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -125,6 +178,9 @@ height: 427px;
 margin-left: 182px;
 margin-bottom: 217px;
 margin-top: 50px;
+
+width: 469px;
+height: 309px;
 }
 
 .highlights-title{
@@ -136,20 +192,102 @@ margin-top: 50px;
 .summary{
     font-size: 16px;
     color: #6C6C6C;
+    width: 404px;
+    height: 113px;
+    text-align: justify;
 }
+
+.watch-now-button{   
+    background-color:#E02C6D;
+    padding: 10px, 24px;
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 172px;
+    height: 44px;
+    margin-top:24px;
+    
+    }
 .bottom-banner img{
     width: 567px;
     height: 427px;
-   
-    
     margin-right: 156px;
+    
+}
+
+/* -- contact-with-player-section-start -- */
+
+.contact-head{
+    text-align: center;
+    
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.contact-player{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 120px;
+    grid-row-gap: 100px;
+    padding-top: 40px;
+   
+ }
+.contact{
+    width: 360px;
+    height: 175px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.15);
+   
+
+}
+
+.flexible-info{
+    display: flex;
+}
+
+.flexible-info img{
+    height: 230px;
+    width: 200px;
+}
+.details{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 29px 21px;
+    border: 1px solid rgb(192, 174, 174);
+    }
+.profession h3{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #252B42;;
+}
+.profession p{
+    font-weight: 600;
+font-size: 12px;
+line-height: 17px;
+color: #737373;
+}
+.contact-info p{
+    font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+color: #737373;
+}
+.fa-star{
+    color:yellow;
 }
 
 
 
-/* footer  */
+/*------------------ footer---------------- */
 .main-footer{
-
+    width: 483.87px;
+    height: 213px;
 
 }
 
@@ -158,28 +296,48 @@ margin-top: 50px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    margin-top: 150px;
     margin-bottom: 63px;
+   
+    
     
 }
 
 .footer-logo img{
     width: 483.87px;
     height: 110px;
+    text-align: center;
+    margin-left: 475px;
+    margin-right: 481px;
+    
+    
 }
 
-.icon-image img{
-    width: 170px;
-height: 32px;
-margin: 20px 0px;
-}
-
-.p{
-    margin: 20px 0px;
+.icon{
     display: flex;
-align-items: center;
-text-align: right;
+    text-align: center;
+}
+
+.icon .fab{
+   
+    font-size: 32px;
+    margin: 0px 12px;
+     background-color: #969bab9d;;
+     padding: 5px;
+     border-radius: 20px;
+    
+     margin-top: 20px;
+   
+    
+
+
+}
+
+.footer-title{
+    margin: 20px;
 font-size: 18px;
+padding-bottom: 10px;
+text-align: center;
 }
 
 
@@ -190,15 +348,34 @@ font-size: 18px;
 
 
 /* Mobile Devices */
+   
 
 @media only screen and (max-width:688px) {
     .container{
         width: 100%;
     }
-    .football-news, .players-layout, .latest-news{
+
+.football-news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.players-layout, .latest-news .contact-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+   
+    .football-news, .players-layout, .latest-news .contact-player {
         grid-template-columns: repeat(1, 1fr);
     }
+
+   
 }
+    
+
 
 
 /* tablet devices */
@@ -206,8 +383,14 @@ font-size: 18px;
     .container{
         width: 100%;
     }
-    .football-news, .players-layout, .latest-news{
+    .football-news, .players-layout, .latest-news .contact-player {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .football-news, .contact-player, .players-layout, .latest-news{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
   
 }
