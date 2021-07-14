@@ -12,39 +12,30 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #FFFFFF;
-    
+    background-color: #FFFFFF;   
 }
 
     /*----------------------
-    header-section
+       header-section
     ---------------------- */
 
 header{
-    
     background-color: 
     #2D25A0;
 }
-
-
-
 
 /* Conmebol Copa America 2021 */
 .football-news{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
     background-color:#2D25A0; 
-   
     height: 677px;
 }
 
 .layer{
     width: 75%;
     padding-left: 116px;
-    padding-top: 207px;
-    
-    
+    padding-top: 207px; 
 }
 
 .layer-title {
@@ -69,14 +60,12 @@ header{
  .layer-link {
     font-size: 16px;
     text-decoration: none;
-    color: #FFFFFF;  
-    
+    color: #FFFFFF;   
 }
 
 .fa-arrow-right{
     color: #FFFFFF; 
-    padding-left: 10px;
-   
+    padding-left: 10px;  
 }
 
 .layer-banner img{
@@ -85,7 +74,6 @@ height: 438px;
 margin-top: 135px;
 margin-right: 140px;
 margin-bottom: 86px;
-
 }
 
 /* animation */
@@ -114,8 +102,7 @@ margin-bottom: 86px;
 main{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 
 .players-layout{
@@ -125,9 +112,7 @@ main{
     grid-column-gap: 30px;
     margin-left: 180px;
     margin-right: 210px;
-    margin-top: 70px;
-    
-    
+    margin-top: 70px;  
 }
 .player{
   background-color:  #FFFFFF; 
@@ -165,8 +150,6 @@ height: 256px;
 
 /* Highlights Copa America 2021 */
 
-
-
 .latest-news{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -178,7 +161,6 @@ height: 256px;
 margin-left: 182px;
 margin-bottom: 217px;
 margin-top: 50px;
-
 width: 469px;
 height: 309px;
 }
@@ -187,7 +169,6 @@ height: 309px;
     font-size: 48px;
     color:#0A0826 ;
     margin: 8px 0px;
-
 }
 .summary{
     font-size: 16px;
@@ -221,7 +202,6 @@ height: 309px;
 
 .contact-head{
     text-align: center;
-    
     font-weight: 700;
     font-size: 25px;
 }
@@ -239,8 +219,6 @@ height: 309px;
     height: 175px;
     border-radius: 5px;
     box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.15);
-   
-
 }
 
 .flexible-info{
@@ -266,12 +244,12 @@ height: 309px;
     line-height: 23px;
     color: #252B42;;
 }
-.profession p{
-    font-weight: 600;
-font-size: 12px;
-line-height: 17px;
-color: #737373;
-}
+    .profession p{
+        font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    color: #737373;
+    }
 .contact-info p{
     font-weight: 500;
 font-size: 12px;
@@ -281,8 +259,6 @@ color: #737373;
 .fa-star{
     color:yellow;
 }
-
-
 
 /*------------------ footer---------------- */
 .main-footer{
@@ -297,9 +273,7 @@ color: #737373;
     justify-content: center;
     align-items: center;
     margin-top: 150px;
-    margin-bottom: 63px;
-   
-    
+    margin-bottom: 63px; 
     
 }
 
@@ -308,9 +282,7 @@ color: #737373;
     height: 110px;
     text-align: center;
     margin-left: 475px;
-    margin-right: 481px;
-    
-    
+    margin-right: 481px;  
 }
 
 .icon{
@@ -327,9 +299,6 @@ color: #737373;
      border-radius: 20px;
     
      margin-top: 20px;
-   
-    
-
 
 }
 
@@ -339,8 +308,6 @@ font-size: 18px;
 padding-bottom: 10px;
 text-align: center;
 }
-
-
 
 /* ---------------------
     Media Queries 
@@ -371,11 +338,8 @@ text-align: center;
     .football-news, .players-layout, .latest-news .contact-player {
         grid-template-columns: repeat(1, 1fr);
     }
-
-   
 }
     
-
 
 
 /* tablet devices */
